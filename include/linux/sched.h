@@ -1262,7 +1262,7 @@ struct task_struct {
 	unsigned in_execve:1;	/* Tell the LSMs that the process is doing an
 				 * execve */
 
-	unsigned sched_in_iowait:1;		/* Called io_schedule() */
+	unsigned in_iowait:1;		/* Called io_schedule() */
 	unsigned sched_reset_on_fork:1;		/* Revert to default
 						 * priority/policy on fork */
 	unsigned sched_wake_interactive:4;	/* User-driven wakeup */
